@@ -1,0 +1,16 @@
+department_id,department_name,type,floor,beds,opd_fee
+D01,General Medicine,OPD/IPD,5,33,400
+D02,Cardiology,OPD/IPD,5,27,400
+D03,Orthopedics,OPD/IPD,2,30,300
+D04,Pediatrics,OPD/IPD,5,44,800
+D05,Gynecology,OPD/IPD,5,20,300
+D06,Neurology,OPD/IPD,3,37,400
+D07,Dermatology,OPD,4,0,500
+D08,ENT,OPD,1,0,300
+D09,Ophthalmology,OPD,5,0,600
+D10,Psychiatry,OPD/IPD,5,13,600
+D11,Emergency,Emergency,1,0,400
+D12,ICU,IPD,5,11,800
+D13,Surgery,OPD/IPD,1,11,500
+D14,Urology,OPD/IPD,2,10,800
+D15,Endocrinology,OPD/IPD,3,21,300

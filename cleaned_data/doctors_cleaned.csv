@@ -1,0 +1,21 @@
+doctor_id,name,department_id,department_name,qualification,experience_yrs,consultation_fee,available_days,opd_timing
+DR001,Dr. Ramesh Sharma,D01,General Medicine,Not Specified,13.5,1550.0,Mon-Sat,Not Specified
+DR002,Dr. Sita Thapa,D02,Cardiology,"MBBS, DM Cardio",20.0,2000.0,Mon-Fri,9AM-1PM
+DR003,Dr. Bikash Rai,D03,Orthopedics,"MBBS, MS Ortho",15.0,1800.0,Mon-Fri,9AM-1PM
+DR004,Dr. Sunita Gurung,D04,Pediatrics,"MBBS, MD Peds",18.0,1500.0,Mon-Fri,2PM-6PM
+DR005,Dr. Gopal Karki,D05,Gynecology,"MBBS, MD Gynae",22.0,1600.0,Mon-Sat,10AM-2PM
+DR006,Dr. Anish Poudel,D06,Neurology,"MBBS, DM Neuro",12.0,2000.0,Mon-Fri,10AM-2PM
+DR007,Dr. Kabita Basnet,D07,Dermatology,"MBBS, MD Derm",10.0,1200.0,Sun-Fri,10AM-2PM
+DR008,Dr. Nabin Adhikari,D08,ENT,"MBBS, MS ENT",14.0,1400.0,Mon-Sat,9AM-1PM
+DR009,Dr. Priya Shrestha,D09,Ophthalmology,"MBBS, MS Ophth",16.0,1500.0,Mon-Fri,9AM-1PM
+DR010,Dr. Deepak Ghimire,D10,Psychiatry,"MBBS, MD Psych",11.0,1300.0,Sun-Fri,9AM-1PM
+DR011,Dr. Manoj KC,D11,Emergency,"MBBS, Emergency",8.0,1600.0,Sun-Fri,10AM-2PM
+DR012,Dr. Laxmi Dahal,D12,ICU,"MBBS, MD ICU",13.0,2500.0,Mon-Sat,10AM-2PM
+DR013,Dr. Santosh Koirala,D13,Surgery,"MBBS, MS Surg",20.0,2000.0,Mon-Sat,2PM-6PM
+DR014,Dr. Roshan Acharya,D14,Urology,"MBBS, MS Urol",99.0,1550.0,Sun-Fri,9AM-1PM
+DR015,Dr. Puja Subedi,D15,Endocrinology,"MBBS, MD Endo",9.0,1600.0,Mon-Fri,10AM-2PM
+DR016,Dr. Hemant Bhattarai,D01,General Medicine,MBBS,5.0,1000.0,Mon-Sat,9AM-1PM
+DR017,Dr. Menuka Timilsina,D02,Cardiology,"MBBS, MD",8.0,1200.0,Sun-Fri,9AM-1PM
+DR018,Dr. Saroj Chhetri,D03,Orthopedics,Not Specified,13.5,1200.0,Sun-Fri,Not Specified
+DR019,Dr. Anjali Neupane,D04,Pediatrics,MBBS,6.0,1000.0,Mon-Sat,10AM-2PM
+DR020,Dr. Bimal Maharjan,D13,Surgery,"MBBS, MS Surg",15.0,1800.0,Mon-Sat,2PM-6PM
