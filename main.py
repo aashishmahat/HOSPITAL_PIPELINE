@@ -1,15 +1,38 @@
+import schedule
+import time
+from Logs.logger_setup import get_logger
+
 from pipeline.extract import load_datasets
 from pipeline.transform import transforms_data
 from pipeline.load import store
-def main():
-    print("=== Starting Hospital Analytics Pipeline ===\n")
-    #Extract datasets
-    datasets = load_datasets()
-    #Transform datasets
-    cleaned_data=transforms_data(datasets)
-    #load data 
-    store(cleaned_data)
-    print("\n=== Pipeline Execution Completed ===")
+from pipeline.report import generate_report
+
+logger = get_logger()
+
+
+def run_pipeline():
+    logger.info("=== Pipeline Run Started ===")
+    try:
+        datasets     = load_datasets()
+        cleaned_data = transforms_data(datasets)
+        store(cleaned_data)
+        generate_report()
+        logger.info("=== Pipeline Completed Successfully ===")
+    except Exception as e:
+        logger.error(f"Pipeline failed: {e}", exc_info=True)
+
+
+# ── Schedule (uncomment ONE) ──────────────────────────────────────────────────
+schedule.every().day.at("00:00").do(run_pipeline)   # daily midnight
+# schedule.every(1).hours.do(run_pipeline)           # every hour
+# schedule.every(10).minutes.do(run_pipeline)        # every 10 minutes
+# schedule.every().monday.at("06:00").do(run_pipeline) # every Monday 6 AM
+
 
 if __name__ == "__main__":
-    main()
+    logger.info("Scheduler started.")
+    run_pipeline()                                      # run once on startup
+    logger.info(f"Next scheduled run: {schedule.next_run()}")
+    while True:
+        schedule.run_pending()
+        time.sleep(60)
