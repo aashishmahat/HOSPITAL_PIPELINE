@@ -2851,7 +2851,7 @@ ADM002849,PAT007922,Fulkumari Timilsina,DR008,Dr. Nabin Adhikari,D08,ENT,2025-09
 ADM002850,PAT007927,Asha Shrestha,DR011,Dr. Manoj KC,D11,Emergency,2025-10-28,2025-11-02,5.0,General Ward,1500.0,7500,Emergency,Recovered,B030
 ADM002851,PAT007928,Kumari Devkota,DR006,Dr. Anish Poudel,D06,Neurology,2025-04-29,2025-05-07,8.0,Semi-Private,2500.0,20000,Emergency,Improved,B021
 ADM002852,PAT007930,Indira Oli,DR011,Dr. Manoj KC,D11,Emergency,2025-04-03,2025-04-14,11.0,General Ward,1500.0,16500,Emergency,Recovered,B041
-ADM002853,PAT007931,Pabitra Rana,DR015,Dr. Puja Subedi,D15,Endocrinology,2025-11-25,2025-12-03,999.0,NICU,10000.0,80000,Transfer,Improved,B024
+ADM002853,PAT007931,Pabitra Rana,DR015,Dr. Puja Subedi,D15,Endocrinology,2025-11-25,2025-12-03,31.0,NICU,10000.0,80000,Transfer,Improved,B024
 ADM002854,PAT007939,Niraj Giri,DR012,Dr. Laxmi Dahal,D12,ICU,2025-03-31,2025-04-21,21.0,General Ward,1500.0,31500,Planned,Recovered,B040
 ADM002855,PAT007945,Yogesh Shrestha,DR011,Dr. Manoj KC,D11,Emergency,2025-12-24,Not Discharged,10.0,General,8000.0,80000,Transfer,Unknown,Unassigned
 ADM002856,PAT007947,Padma Timilsina,DR011,Dr. Manoj KC,D11,Emergency,2025-09-23,2025-09-30,7.0,General Ward,1500.0,10500,Emergency,Improved,B014

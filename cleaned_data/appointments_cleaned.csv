@@ -13598,7 +13598,7 @@ APT0013596,PAT006789,Menuka Dahal,DR016,Unknown,D01,Unknown,2026-03-10,Not Recor
 APT0013597,PAT006789,Menuka Dahal,DR009,Dr. Priya Shrestha,D09,Ophthalmology,2025-08-12,12:15,70,Completed,Review,1500.0,Follow-up visit
 APT0013598,PAT006789,Menuka Dahal,DR009,Unknown,D09,Ophthalmology,2025-11-06,14:30,74,Completed,Review,1500.0,None
 APT0013599,PAT006790,Anita Chhetri,DR017,Dr. Menuka Timilsina,D02,Cardiology,2026-01-23,11:30,61,Cancelled,Follow-up,1200.0,Referred by GP
-APT0013600,PAT006790,Anita Chhetri,DR017,Dr. Menuka Timilsina,D02,Cardiology,2025-09-02,11:30,40,Pending,Follow-up,0.0,Self-referred
+APT0013600,PAT006790,Anita Chhetri,DR017,Dr. Menuka Timilsina,D02,Cardiology,2025-09-02,11:30,40,Pending,Follow-up,550.0,Self-referred
 APT0013601,PAT006790,Anita Chhetri,DR006,Dr. Anish Poudel,D06,Neurology,2025-08-15,14:30,5,Completed,Review,2000.0,Emergency walk-in
 APT0013602,PAT006791,Dinesh Sharma,DR001,Unknown,D01,General Medicine,2025-12-05,Not Recorded,32,Completed,New,1500.0,None
 APT0013603,PAT006792,Suresh Pandey,DR001,Dr. Ramesh Sharma,D01,General Medicine,2025-04-15,10:15,63,Completed,Review,1500.0,None
