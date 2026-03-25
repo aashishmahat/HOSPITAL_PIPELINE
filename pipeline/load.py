@@ -1,11 +1,22 @@
-from pathlib import Path    
-import os
-LOAD_DATA=Path("cleaned_data")
+import numpy as np
+import pandas as pd
+import sqlite3
+from pprint import pprint
 
-def store(cleaned_data):
-    for name ,df in cleaned_data.items():
-        os.makedirs(LOAD_DATA,exist_ok=True)
-        file_path=os.path.join(LOAD_DATA,f"{name}_cleaned.csv")
-        df.to_csv(file_path,index=False)
-    print("Data stored successfully!")
+def Storage_Choice(cleaned_data):
+    pprint("let's choose for the storage as your choice.")
+    conn=sqlite3.connect("hopital.db")
+    cursor=conn.cursor()
+    for name,df in cleaned_data.items():
+        pprint(f"Inserting into table:{name}")
+        df.to_sql(name,conn,if_exists="replace",index=False)
+    pprint("All data inserted successfully!")
+    patients_name=input("Enter the patient id:")
+    cursor.execute("SELECT * FROM patients WHERE name LIKE ?",(f"%{patients_name}%",))
+    rows=cursor.fetchall()
+    if rows:
+        pprint(rows)
     
+    else:
+        pprint(f"No patient found with ID {patients_name}")
+    conn.close()
