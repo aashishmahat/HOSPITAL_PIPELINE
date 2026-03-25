@@ -1,0 +1,7 @@
+total_revenue: 453499168.0
+paid_amount: 331664133.65
+pending_amount: 121835034.35
+avg_bill: 21034.28
+payment_modes: {'Cash': 9398, 'Mobile Banking': 3993, 'Card': 3871, 'Insurance': 2358, 'Unknown': 1940}
+payment_status: {'Paid': 17674, 'Partial': 1679, 'Unknown': 1294, 'Pending': 913}
+total_discount: 17547714.35
