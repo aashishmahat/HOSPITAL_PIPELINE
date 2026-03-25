@@ -136,7 +136,7 @@ def clean_labTests(df):
     print(df.isnull().sum())
     print(df.head())
     return df
- 
+
  
 # ── diagnoses ─────────────────────────────────────────────────────────────────
 def clean_diagnoses(df):
