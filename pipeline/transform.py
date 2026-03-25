@@ -19,16 +19,12 @@ def remove_outliers_iqr(df, col):
 def clean_patients(df):
     df = df.copy()
     df = df.drop_duplicates(subset=["patient_id"])
-    
-    # Gender
     df["gender"] = df["gender"].astype(str).str.strip().str.upper()
     df["gender"] = df["gender"].replace({"M": "Male", "F": "Female", "UN": "Unknown"})
     df["gender"] = df["gender"].fillna("Unknown").str.capitalize()
     df["gender"] = df["gender"].replace({"Male":"M","Female":"F","Unknown":"UN"})
-    
-    # Fill missing
-    df["age"] = df["age"].fillna(df["age"].median())
     df = remove_outliers_iqr(df, "age")
+    df["age"] = df["age"].fillna(df["age"].median())
     
     df["blood_group"] = df["blood_group"].fillna("Unknown")
     df["phone"] = df["phone"].fillna("9800000000")

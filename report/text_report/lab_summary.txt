@@ -14,3 +14,18 @@ ECG                1373
 Dengue NS1         1371
 Pregnancy Test     1365
 LFT                1364
+Urine R/E          1359
+Lipid Profile      1353
+Ultrasound Abd     1347
+COVID Antigen      1345
+Widal Test         1344
+HbA1c              1342
+CT Scan            1341
+Thyroid Profile    1329
+Chest X-Ray        1326
+Echocardiogram     1323
+Stool R/E          1310
+Blood Culture      1302
+KFT                1301
+MRI Brain          1284
+CBC                1281

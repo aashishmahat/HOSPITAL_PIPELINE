@@ -7,7 +7,6 @@ def patient_report(cleaned_data, filename="report/text_report/patient_report.txt
         on='patient_id',
         how='left'
     )
-
     with open(filename, "w") as f:
         f.write("=== PATIENT REPORT ===\n\n")
 
@@ -46,7 +45,7 @@ def doctor_patient(cleaned_data, filename="report/text_report/doctor_patient.txt
         on='doctor_id',
         how='left'
     )
-
+    # print(doc_app.head())
     # Count number of patients per doctor
     patient_count = doc_app.groupby('doctor_name')['patient_id'].nunique()
 
@@ -61,8 +60,9 @@ def doctor_patient(cleaned_data, filename="report/text_report/doctor_patient.txt
 
 
 def lab_summary(cleaned_data, filename="report/text_report/lab_summary.txt"):
-    df = cleaned_data.get("labTests")
-
+    # df = cleaned_data.get("labTests")
+    df = cleaned_data['labTests']
+    # print(df.head())
     if df is None or df.empty:
         return {
             "total_tests": 0,
@@ -74,7 +74,7 @@ def lab_summary(cleaned_data, filename="report/text_report/lab_summary.txt"):
     summary = {
         "total_tests":   len(df),
         "status_dist":   df["status"].value_counts().to_dict()           if "status"    in df.columns else {},
-        "top_tests":     df["test_name"].value_counts().head(5).to_dict() if "test_name" in df.columns else {},
+        "top_tests":     df["test_name"].value_counts().to_dict() if "test_name" in df.columns else {},
         "total_lab_rev": round(df["fee"].sum(), 2)                        if "fee"       in df.columns else 0.0,
     }
 
@@ -100,8 +100,8 @@ def lab_summary(cleaned_data, filename="report/text_report/lab_summary.txt"):
 
 
 def billing_summary(cleaned_data, filename="report/text_report/billing_summary.txt"):
-    df = cleaned_data.get("billing")
-
+    # df = cleaned_data.get("billing")
+    df=cleaned_data['billing']
     if df is None or df.empty:
         return {
             "total_revenue":  0.0,
@@ -155,8 +155,8 @@ def billing_summary(cleaned_data, filename="report/text_report/billing_summary.t
 
 
 def admission_report(cleaned_data, filename="report/text_report/admission_report.txt"):
-    df = cleaned_data.get("admission")
-
+    # df = cleaned_data.get("admission")
+    df =cleaned_data['admission']
     if df is None or df.empty:
         with open(filename, "w") as f:
             f.write("=== ADMISSION REPORT ===\n\nNo data available.\n")
@@ -190,8 +190,8 @@ def admission_report(cleaned_data, filename="report/text_report/admission_report
 
 
 def diagnosis_report(cleaned_data, filename="report/text_report/diagnosis_report.txt"):
-    df = cleaned_data.get("diagnoses")
-
+    # df = cleaned_data.get("diagnoses")
+    df=cleaned_data['diagnoses']
     if df is None or df.empty:
         with open(filename, "w") as f:
             f.write("=== DIAGNOSIS REPORT ===\n\nNo data available.\n")
@@ -221,8 +221,7 @@ def diagnosis_report(cleaned_data, filename="report/text_report/diagnosis_report
 
 
 def prescription_report(cleaned_data, filename="report/text_report/prescription_report.txt"):
-    df = cleaned_data.get("prescription")
-
+    df=cleaned_data['prescription']
     if df is None or df.empty:
         with open(filename, "w") as f:
             f.write("=== PRESCRIPTION REPORT ===\n\nNo data available.\n")
@@ -257,8 +256,7 @@ def prescription_report(cleaned_data, filename="report/text_report/prescription_
 
 
 def appointment_report(cleaned_data, filename="report/text_report/appointment_report.txt"):
-    df = cleaned_data.get("appointments")
-
+    df=cleaned_data['appointments']
     if df is None or df.empty:
         with open(filename, "w") as f:
             f.write("=== APPOINTMENT REPORT ===\n\nNo data available.\n")
@@ -298,8 +296,7 @@ def appointment_report(cleaned_data, filename="report/text_report/appointment_re
 
 
 def doctor_report(cleaned_data, filename="report/text_report/doctor_report.txt"):
-    df = cleaned_data.get("doctors")
-
+    df=cleaned_data['doctors']
     if df is None or df.empty:
         with open(filename, "w") as f:
             f.write("=== DOCTOR REPORT ===\n\nNo data available.\n")
@@ -336,9 +333,6 @@ def doctor_report(cleaned_data, filename="report/text_report/doctor_report.txt")
 
 
 def generate_all_reports(cleaned_data):
-    """Run all report generation functions at once."""
-    import os
-    os.makedirs("report", exist_ok=True)
 
     patient_report(cleaned_data)
     doctor_patient(cleaned_data)
