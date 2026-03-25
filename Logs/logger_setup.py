@@ -1,26 +1,26 @@
 import logging
 import os
+from logging.handlers import RotatingFileHandler
 
-log_dir  = os.path.dirname(__file__)        # always saves to Logs/
-log_file = os.path.join(log_dir, "pipeline.log")
+LOG_DIR  = os.path.dirname(os.path.abspath(__file__))
+LOG_FILE = os.path.join(LOG_DIR, "pipeline.log")
+FORMAT   = "%(asctime)s  [%(levelname)s]  %(name)s - %(message)s"
+
 
 def get_logger(name: str = "HospitalPipeline") -> logging.Logger:
-    """Call this from any file: from Logs.logger_setup import get_logger"""
     logger = logging.getLogger(name)
 
-    if logger.handlers:          # avoid adding duplicate handlers on reimport
+    if logger.handlers:          # avoid duplicate handlers on re-import
         return logger
 
     logger.setLevel(logging.INFO)
+    fmt = logging.Formatter(FORMAT, datefmt="%Y-%m-%d %H:%M:%S")
 
-    fmt = logging.Formatter("%(asctime)s  [%(levelname)s]  %(message)s",
-                             datefmt="%Y-%m-%d %H:%M:%S")
-
-    # file handler — writes to Logs/pipeline.log
-    fh = logging.FileHandler(log_file)
+    # File handler — rotates at 5 MB, keeps 3 backups
+    fh = RotatingFileHandler(LOG_FILE, maxBytes=5*1024*1024, backupCount=3)
     fh.setFormatter(fmt)
 
-    # console handler
+    # Console handler
     ch = logging.StreamHandler()
     ch.setFormatter(fmt)
 

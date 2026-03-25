@@ -1,0 +1,77 @@
+=================================================================
+      HOSPITAL ANALYTICS PIPELINE — SUMMARY REPORT
+      Generated : 2026-03-25 12:15
+=================================================================
+
+1. PATIENT STATISTICS
+----------------------------------------
+  Total patients       : 10000
+  Average age          : 42.6 yrs
+  Insured patients     : 2430
+  OPD / IPD            : 6411 / 2590
+  Gender distribution  :
+      M           : 5040
+      F           : 4959
+      un          : 1
+
+2. APPOINTMENTS
+----------------------------------------
+  Total                : 19993
+  Completion rate      : 89.9%
+  Status breakdown     :
+      Completed           : 17969
+      Cancelled           : 1042
+      No-show             : 980
+      Nan                 : 1
+      Pending             : 1
+  Top departments      :
+      Surgery                       : 1950
+      Orthopedics                   : 1921
+      Cardiology                    : 1892
+      Pediatrics                    : 1890
+      General Medicine              : 1872
+
+3. BILLING & REVENUE
+----------------------------------------
+  Total revenue        : Rs. 453,499,168.00
+  Paid                 : Rs. 331,664,133.65
+  Pending              : Rs. 121,835,034.35
+  Avg bill             : Rs. 21,034.28
+  Total discounts      : Rs. 17,547,714.35
+  Payment modes        :
+      Cash                : 9398
+      Mobile Banking      : 3993
+      Card                : 3871
+      Insurance           : 2358
+      Unknown             : 1940
+
+4. ADMISSIONS
+----------------------------------------
+  Total                : 3589
+  Avg stay             : 11.2 days
+  Ward types           :
+      ICU                 : 694
+      Private Room        : 692
+      General Ward        : 689
+      NICU                : 669
+      Semi-Private        : 666
+      General             : 179
+
+5. LAB TESTS
+----------------------------------------
+  Total tests          : 26740
+  Lab revenue          : Rs. 31,791,700.00
+  Status distribution  :
+      Completed           : 22364
+      Pending             : 4375
+      Nan                 : 1
+
+6. DOCTORS
+----------------------------------------
+  Total doctors        : 20
+  Avg experience       : 17.4 yrs
+  Avg consult fee      : Rs. 1,565.00
+
+=================================================================
+  END OF REPORT
+=================================================================

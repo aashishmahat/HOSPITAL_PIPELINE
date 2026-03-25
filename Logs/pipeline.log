@@ -485,3 +485,37 @@ RuntimeError: 'cryptography' package is required for sha256_password or caching_
 2026-03-23 17:16:30  [INFO]  Report generation completed.
 2026-03-23 17:16:30  [INFO]  === Pipeline Completed Successfully ===
 2026-03-23 17:16:30  [INFO]  Next scheduled run: 2026-03-24 00:00:00
+2026-03-25 12:07:22  [INFO]  HospitalPipeline - Scheduler started.
+2026-03-25 12:07:22  [INFO]  HospitalPipeline - === Pipeline Run Started ===
+2026-03-25 12:07:23  [INFO]  HospitalPipeline - CSV backup saved to cleaned_data/
+2026-03-25 12:07:23  [INFO]  HospitalPipeline -   Loaded 'patients' → 10000 rows
+2026-03-25 12:07:23  [INFO]  HospitalPipeline -   Loaded 'doctors' → 20 rows
+2026-03-25 12:07:23  [INFO]  HospitalPipeline -   Loaded 'departments' → 15 rows
+2026-03-25 12:07:23  [INFO]  HospitalPipeline -   Loaded 'admissions' → 3589 rows
+2026-03-25 12:07:23  [INFO]  HospitalPipeline -   Loaded 'appointments' → 19993 rows
+2026-03-25 12:07:23  [INFO]  HospitalPipeline -   Loaded 'billing' → 21560 rows
+2026-03-25 12:07:23  [INFO]  HospitalPipeline -   Loaded 'lab_tests' → 26740 rows
+2026-03-25 12:07:24  [INFO]  HospitalPipeline -   Loaded 'diagnoses' → 36019 rows
+2026-03-25 12:07:24  [INFO]  HospitalPipeline -   Loaded 'prescriptions' → 54129 rows
+2026-03-25 12:07:24  [INFO]  HospitalPipeline - All datasets loaded into SQLite (hospital.db)
+2026-03-25 12:07:24  [INFO]  HospitalPipeline - Report generation started.
+2026-03-25 12:07:24  [INFO]  HospitalPipeline - Report saved → reports/hospital_report_2026-03-25.txt
+2026-03-25 12:07:24  [INFO]  HospitalPipeline - Report generation completed.
+2026-03-25 12:07:24  [INFO]  HospitalPipeline - === Pipeline Completed Successfully ===
+2026-03-25 12:07:24  [INFO]  HospitalPipeline - Next scheduled run: 2026-03-26 00:00:00
+2026-03-25 12:15:16  [INFO]  HospitalPipeline - === Pipeline Started ===
+2026-03-25 12:15:17  [INFO]  HospitalPipeline - CSV backup saved to cleaned_data/
+2026-03-25 12:15:17  [INFO]  HospitalPipeline -   Loaded 'patients' → 10000 rows
+2026-03-25 12:15:17  [INFO]  HospitalPipeline -   Loaded 'doctors' → 20 rows
+2026-03-25 12:15:17  [INFO]  HospitalPipeline -   Loaded 'departments' → 15 rows
+2026-03-25 12:15:17  [INFO]  HospitalPipeline -   Loaded 'admissions' → 3589 rows
+2026-03-25 12:15:17  [INFO]  HospitalPipeline -   Loaded 'appointments' → 19993 rows
+2026-03-25 12:15:17  [INFO]  HospitalPipeline -   Loaded 'billing' → 21560 rows
+2026-03-25 12:15:18  [INFO]  HospitalPipeline -   Loaded 'lab_tests' → 26740 rows
+2026-03-25 12:15:18  [INFO]  HospitalPipeline -   Loaded 'diagnoses' → 36019 rows
+2026-03-25 12:15:18  [INFO]  HospitalPipeline -   Loaded 'prescriptions' → 54129 rows
+2026-03-25 12:15:18  [INFO]  HospitalPipeline - All datasets loaded into SQLite (hospital.db)
+2026-03-25 12:15:18  [INFO]  HospitalPipeline - Report generation started.
+2026-03-25 12:15:18  [INFO]  HospitalPipeline - Report saved → reports/hospital_report_2026-03-25.txt
+2026-03-25 12:15:18  [INFO]  HospitalPipeline - Report generation completed.
+2026-03-25 12:15:18  [INFO]  HospitalPipeline - === Pipeline Completed ===
