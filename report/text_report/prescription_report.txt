@@ -1,0 +1,29 @@
+=== PRESCRIPTION REPORT ===
+
+Total Prescriptions: 54129
+
+Top 10 Medicines Prescribed:
+medicine_name
+Dexamethasone 4mg      2813
+Ceftriaxone 1g         2754
+Diazepam 5mg           2749
+Ciprofloxacin 500mg    2737
+Metformin 500mg        2729
+Cetirizine 10mg        2724
+Ibuprofen 400mg        2720
+Omeprazole 20mg        2719
+Pantoprazole 40mg      2714
+Folic Acid 5mg         2713
+
+Dosage Distribution:
+dosage
+1-0-0         12535
+0-0-1         10072
+As advised     7610
+1-0-1          7534
+1-1-1          7530
+As needed      6281
+BD             2567
+
+Unique Doctors Prescribing: 20
+Unique Patients with Prescriptions: 9597

@@ -1,0 +1,20 @@
+=== BILLING SUMMARY REPORT ===
+
+Total Revenue: 453499168.00000006
+Paid Amount: 331664133.65
+Pending Amount: 121835034.35
+Average Bill: 21034.28
+Total Discounts: 17547714.349999998
+
+Payment Status Distribution:
+Paid       17674
+Partial     1679
+Unknown     1294
+Pending      913
+
+Payment Mode Distribution:
+Cash              9398
+Mobile Banking    3993
+Card              3871
+Insurance         2358
+Unknown           1940

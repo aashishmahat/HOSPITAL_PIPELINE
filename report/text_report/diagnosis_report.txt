@@ -1,0 +1,27 @@
+=== DIAGNOSIS REPORT ===
+
+Total Diagnosis Records: 36019
+
+Top 10 Diagnoses:
+diagnosis
+Tonsillitis               636
+Pneumonia                 629
+Otitis Media              615
+Heart Failure             546
+Colorectal Cancer         543
+Intestinal Obstruction    538
+Angina Pectoris           538
+Gallstones                535
+Thyroid Nodule            530
+Appendicitis              517
+
+Severity Distribution:
+severity
+Mild        17035
+Moderate    11738
+Severe       5083
+Nan          2162
+Critical        1
+
+Earliest Diagnosis Date: 2025-03-12
+Latest Diagnosis Date: 2026-03-12

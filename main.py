@@ -2,7 +2,7 @@ from pipeline.extract import load_datasets
 from pipeline.transform import transforms_data
 from pipeline.load import Storage_Choice
 from report.reportgeneration import generate_all_reports
-from report.graphs import generate_graphs
+from report.graph.graphs import generate_graphs
 from Logs.logger_setup import get_logger
 
 logger = get_logger()

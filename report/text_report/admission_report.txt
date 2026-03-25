@@ -1,0 +1,27 @@
+=== ADMISSION REPORT ===
+
+Total Admissions: 3589
+Average Length of Stay: 11.22 days
+Max Length of Stay: 999.0 days
+Min Length of Stay: 0.0 days
+
+Ward Type Distribution:
+ward_type
+ICU             694
+Private Room    692
+General Ward    689
+NICU            669
+Semi-Private    666
+General         179
+
+Discharge Status Distribution:
+discharge_status
+Recovered    1811
+Improved     1022
+Referred      287
+Unknown       251
+DAMA          154
+Expired        64
+
+Total Ward Charges: 201579000
+Average Ward Charges: 56165.78

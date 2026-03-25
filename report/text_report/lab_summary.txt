@@ -1,0 +1,16 @@
+=== LAB SUMMARY REPORT ===
+
+Total Tests: 26740
+Total Lab Revenue: 31791700.0
+
+Test Status Distribution:
+Completed    22364
+Pending       4375
+Nan              1
+
+Top 5 Tests Ordered:
+Blood Sugar FBS    1380
+ECG                1373
+Dengue NS1         1371
+Pregnancy Test     1365
+LFT                1364
