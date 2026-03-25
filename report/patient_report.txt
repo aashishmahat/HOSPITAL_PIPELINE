@@ -8,9 +8,9 @@ Gender Distribution:
 gender
 M     5040
 F     4959
-un       1
+UN       1
 
-Average Age: 42.6431
+Average Age: 42.55605
 
 Ward Type Distribution:
 ward_type

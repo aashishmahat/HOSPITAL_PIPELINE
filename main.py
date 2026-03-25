@@ -19,6 +19,5 @@ def run_pipeline():
     logger.info("=== Pipeline Completed ===")
 
 
-    
 if __name__ == "__main__":
     run_pipeline()
