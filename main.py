@@ -1,7 +1,8 @@
 from pipeline.extract import load_datasets
 from pipeline.transform import transforms_data
 from pipeline.load import store
-from pipeline.report import generate_report
+from report.reportgeneration import patient_report
+from report.reportgeneration import doctor_patient
 from Logs.logger_setup import get_logger
 
 logger = get_logger()
@@ -12,7 +13,8 @@ def run_pipeline():
     datasets     = load_datasets()
     cleaned_data = transforms_data(datasets)
     store(cleaned_data)
-    generate_report()
+    patient_report(cleaned_data)
+    doctor_patient(cleaned_data)
     logger.info("=== Pipeline Completed ===")
 
 

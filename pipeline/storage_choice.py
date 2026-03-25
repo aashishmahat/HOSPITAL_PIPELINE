@@ -5,7 +5,7 @@ from pprint import pprint
 
 def Storage_Choice(cleaned_data):
     pprint("let's choose for the storage as your choice.")
-    conn=sqlite3.connect("hopital.db")
+    conn=sqlite3.connect("hospital.db")
     cursor=conn.cursor()
     for name,df in cleaned_data.items():
         pprint(f"Inserting into table:{name}")
