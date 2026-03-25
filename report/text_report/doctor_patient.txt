@@ -1,0 +1,25 @@
+=== DOCTOR - PATIENT REPORT ===
+
+Number of Patients per Doctor:
+doctor_name
+Dr. Anish Poudel         923
+Dr. Anjali Neupane       884
+Dr. Bikash Rai           934
+Dr. Bimal Maharjan       959
+Dr. Deepak Ghimire       943
+Dr. Gopal Karki          875
+Dr. Hemant Bhattarai     817
+Dr. Kabita Basnet        942
+Dr. Laxmi Dahal          892
+Dr. Manoj KC             875
+Dr. Menuka Timilsina     906
+Dr. Nabin Adhikari       900
+Dr. Priya Shrestha       896
+Dr. Puja Subedi          881
+Dr. Ramesh Sharma        922
+Dr. Roshan Acharya       926
+Dr. Santosh Koirala      876
+Dr. Saroj Chhetri        878
+Dr. Sita Thapa           893
+Dr. Sunita Gurung        889
+Unknown                 1329

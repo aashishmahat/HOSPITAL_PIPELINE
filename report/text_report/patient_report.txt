@@ -1,0 +1,24 @@
+=== PATIENT REPORT ===
+
+Total Patients: 10000
+Admitted Patients: 3589
+Not Admitted Patients: 6411
+
+Gender Distribution:
+gender
+M     5040
+F     4959
+UN       1
+
+Average Age: 42.55605
+
+Ward Type Distribution:
+ward_type
+ICU             694
+Private Room    692
+General Ward    689
+NICU            669
+Semi-Private    666
+General         179
+
+Total Ward Revenue: 201579000.0

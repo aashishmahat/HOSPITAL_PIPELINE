@@ -1,4 +1,0 @@
-total_tests: 26740
-status_dist: {'Completed': 22364, 'Pending': 4375, 'Nan': 1}
-top_tests: {'Blood Sugar FBS': 1380, 'ECG': 1373, 'Dengue NS1': 1371, 'Pregnancy Test': 1365, 'LFT': 1364}
-total_lab_rev: 17626600.0

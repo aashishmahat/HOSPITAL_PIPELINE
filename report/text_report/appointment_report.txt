@@ -1,0 +1,35 @@
+=== APPOINTMENT REPORT ===
+
+Total Appointments: 19993
+Completed Appointments: 17969
+Completion Rate: 89.88%
+
+Appointment Status Distribution:
+status
+Completed    17969
+Cancelled     1042
+No-show        980
+Nan              1
+Pending          1
+
+Top 10 Departments by Appointments:
+department_name
+Surgery             1950
+Orthopedics         1921
+Cardiology          1892
+Pediatrics          1890
+General Medicine    1872
+Dermatology         1001
+Urology             1000
+Psychiatry           999
+Neurology            980
+ENT                  962
+
+Visit Type Distribution:
+visit_type
+Review       6845
+Follow-up    6642
+New          6506
+
+Earliest Appointment: 2025-03-12
+Latest Appointment: 2026-03-12

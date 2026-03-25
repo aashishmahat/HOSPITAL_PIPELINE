@@ -1,0 +1,25 @@
+=== DOCTOR REPORT ===
+
+Total Doctors: 20
+Average Experience: 13.78 years
+Most Experienced: 26.625 years
+Average Consultation Fee: 1565.0
+Highest Consultation Fee: 2500.0
+
+Specialty Distribution:
+department_name
+General Medicine    2
+Cardiology          2
+Orthopedics         2
+Pediatrics          2
+Surgery             2
+Neurology           1
+Gynecology          1
+Dermatology         1
+ENT                 1
+Psychiatry          1
+Ophthalmology       1
+Emergency           1
+ICU                 1
+Urology             1
+Endocrinology       1
