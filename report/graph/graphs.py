@@ -92,7 +92,7 @@ def plot_appointments(df):
     #  HORIZONTAL BAR — Top departments
     fig, ax = plt.subplots()
     counts = df["department_name"].value_counts().head(5)
-    ax.barh(counts.index, counts.value, color = COLORS[0], edgecolor = "white")
+    ax.barh(counts.index, counts.values, color = COLORS[0], edgecolor = "white")
     ax.set_title("Top 5 Departments by Appointments")
     ax.set_xlabel("Count")
     ax.spines[["top", "right"]].set_visible(False)
