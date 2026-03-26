@@ -16,8 +16,8 @@ sns.set_theme(style="whitegrid", palette=COLORS)
 
 
 def save(fig, name):
-    GRAPH_DIR.mkdir(parents=True, exist_ok=True)
-    fig.savefig(GRAPH_DIR / f"{name}.png", bbox_inches="tight", dpi=120)
+    GRAPH_DIR.mkdir(parents=True, exist_ok=True)  
+    fig.savefig(GRAPH_DIR / f"{name}.png")
     plt.close(fig)
 
 
@@ -26,7 +26,8 @@ def plot_patients(df):
 
     # BAR — Gender
     fig, ax = plt.subplots()
-    df["gender"].value_counts().plot(kind="bar", ax=ax, color=COLORS[:3], edgecolor="white")
+    counts = df["gender"].value_counts()
+    ax.bar(counts.index, counts.values, color=COLORS[:3], edgecolor="white")
     ax.set_title("Patients by Gender")
     ax.set_xlabel("Gender")
     ax.set_ylabel("Count")
@@ -50,7 +51,8 @@ def plot_patients(df):
 
     # BAR — Blood group
     fig, ax = plt.subplots()
-    df["blood_group"].value_counts().plot(kind="bar", ax=ax, color=COLORS[1], edgecolor="white")
+    counts = df["blood_group"].value_counts()
+    ax.bar(counts.index, counts.values, color=COLORS[1], edgecolor="white")
     ax.set_title("Patients by Blood Group")
     ax.set_xlabel("Blood Group")
     ax.set_ylabel("Count")
@@ -81,15 +83,16 @@ def plot_appointments(df):
 
     #  PIE — Status
     fig, ax = plt.subplots()
-    df["status"].value_counts().plot(kind="pie", ax=ax, autopct="%1.1f%%",
-                                     colors=COLORS[:df["status"].nunique()])
+    counts = df["status"].value_counts()
+    ax.pie(counts.values, labels=counts.index, autopct="%1.1f%%", colors=COLORS[:len(counts)])
     ax.set_title("Appointment Status")
     ax.set_ylabel("")
     save(fig, "appointments_status_pie")
 
     #  HORIZONTAL BAR — Top departments
     fig, ax = plt.subplots()
-    df["department_name"].value_counts().head(5).plot(kind="barh", ax=ax, color=COLORS[0])
+    counts = df["department_name"].value_counts().head(5)
+    ax.barh(counts.index, counts.value, color = COLORS[0], edgecolor = "white")
     ax.set_title("Top 5 Departments by Appointments")
     ax.set_xlabel("Count")
     ax.spines[["top", "right"]].set_visible(False)
@@ -196,43 +199,6 @@ def plot_billing(df):
         ax.legend()
         ax.spines[["top", "right"]].set_visible(False)
         save(fig, "billing_discount_vs_total_scatter")
-
-    #  WATERFALL — Revenue flow
-    if "total_amount" in df.columns and "payment_status" in df.columns:
-        total    = pd.to_numeric(df["total_amount"], errors="coerce").sum()
-        paid     = pd.to_numeric(
-            df[df["payment_status"].str.lower() == "paid"]["total_amount"],
-            errors="coerce").sum()
-        pending  = total - paid
-        discount = pd.to_numeric(df.get("discount", pd.Series([0])),
-                                 errors="coerce").sum()
-        net      = paid - discount
-
-        labels   = ["Total\nBilled", "Paid", "Pending\n(−)", "Discounts\n(−)", "Net\nCollected"]
-        values   = [total, paid, -pending, -discount, net]
-        wf_colors = [COLORS[0], COLORS[4], COLORS[3], COLORS[2], COLORS[1]]
-
-        running, bottoms, heights = 0, [], []
-        for v in values[:-1]:
-            bottoms.append(min(running, running + v))
-            heights.append(abs(v))
-            running += v
-        bottoms.append(0)
-        heights.append(abs(net))
-
-        fig, ax = plt.subplots(figsize=(10, 6))
-        for i, (lbl, bot, ht, col) in enumerate(
-                zip(labels, bottoms, heights, wf_colors)):
-            ax.bar(lbl, ht, bottom=bot, color=col, edgecolor="white",
-                   width=0.55, alpha=0.88)
-            ax.text(i, bot + ht + total * 0.005,
-                    f"Rs {abs(values[i])/100_000:.1f}L",
-                    ha="center", fontsize=9)
-        ax.yaxis.set_major_formatter(mticker.FuncFormatter(_rs_axis))
-        ax.set_title("Revenue Waterfall: Billed → Net Collected")
-        ax.set_ylabel("Amount (Rs)")
-        ax.spines[["top", "right"]].set_visible(False)
-        save(fig, "billing_revenue_waterfall")
 
 
 
